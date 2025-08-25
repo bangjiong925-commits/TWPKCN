@@ -1,0 +1,33 @@
+2025-08-25 22:19:09.151 | INFO     | api_client:__init__:61 - API客户端初始化完成，基础URL: http://localhost:3000
+2025-08-25 22:19:09.237 | INFO     | database_manager:_create_indexes:108 - 数据库索引创建完成
+2025-08-25 22:19:09.238 | INFO     | database_manager:connect:83 - 成功连接到MongoDB数据库: taiwanpk10
+2025-08-25 22:19:09.334 | INFO     | database_manager:get_latest_data:328 - 获取到 0 条最新数据
+2025-08-25 22:19:09.342 | INFO     | database_manager:close_connection:454 - 数据库连接已关闭
+2025-08-25 22:19:09.351 | INFO     | python_scraper:scrape_latest_single_record:739 - 开始抓取最新一期台湾PK10数据
+2025-08-25 22:19:18.865 | INFO     | python_scraper:setup_driver:91 - Chrome浏览器驱动设置完成
+2025-08-25 22:19:18.866 | INFO     | python_scraper:navigate_to_page:100 - 正在访问: https://xn--kpro5poukl1g.com/#/
+2025-08-25 22:19:25.235 | INFO     | python_scraper:navigate_to_page:107 - 页面加载完成
+2025-08-25 22:19:25.309 | INFO     | python_scraper:click_pk10_option:153 - 找到台湾PK10选项: 台湾PK10
+2025-08-25 22:19:27.419 | INFO     | python_scraper:click_pk10_option:157 - 成功点击台湾PK10选项
+2025-08-25 22:19:27.420 | INFO     | python_scraper:navigate_to_page:111 - 成功切换到台湾PK10数据
+2025-08-25 22:19:30.436 | INFO     | python_scraper:extract_lottery_data:208 - 第1页找到 3 个表格
+2025-08-25 22:19:30.457 | INFO     | python_scraper:extract_lottery_data:214 - 第1页选择表格 2，包含 50 行
+2025-08-25 22:19:30.468 | INFO     | python_scraper:extract_lottery_data:224 - 第1页找到 50 行数据
+2025-08-25 22:19:30.488 | INFO     | python_scraper:extract_lottery_data:238 - 第1页第一行包含有效数据，从第一行开始读取
+2025-08-25 22:19:30.527 | INFO     | python_scraper:extract_lottery_data:248 - 第1页已达到最大记录数限制: 1
+2025-08-25 22:19:30.528 | INFO     | python_scraper:extract_lottery_data:286 - 第1页成功提取 1 条数据
+2025-08-25 22:19:30.528 | INFO     | python_scraper:scrape_latest_single_record:767 - 成功抓取最新数据: 期号=114048091
+2025-08-25 22:19:30.630 | INFO     | python_scraper:cleanup:801 - 浏览器驱动已关闭
+2025-08-25 22:19:30.642 | INFO     | database_manager:_create_indexes:108 - 数据库索引创建完成
+2025-08-25 22:19:30.643 | INFO     | database_manager:connect:83 - 成功连接到MongoDB数据库: taiwanpk10
+2025-08-25 22:19:30.646 | INFO     | database_manager:close_connection:454 - 数据库连接已关闭
+2025-08-25 22:19:30.647 | ERROR    | database_manager:check_period_exists_in_collection:296 - 检查集合 lottery_data_20250825_01 中期号 114048091 失败: Cannot use MongoClient after close
+2025-08-25 22:19:30.648 | ERROR    | database_manager:get_collection_count:282 - 获取集合 lottery_data_20250825_01 数据量失败: Cannot use MongoClient after close
+2025-08-25 22:19:30.649 | ERROR    | database_manager:get_collection_count:282 - 获取集合 lottery_data_20250825_01 数据量失败: Cannot use MongoClient after close
+2025-08-25 22:19:30.651 | DEBUG    | database_manager:save_lottery_data_to_collection:200 - 创建索引时出现警告（可能已存在）: Cannot use MongoClient after close
+2025-08-25 22:19:30.651 | ERROR    | database_manager:save_lottery_data_to_collection:255 - 保存期号 114048091 到集合 lottery_data_20250825_01 失败: Cannot use MongoClient after close
+2025-08-25 22:19:30.652 | INFO     | database_manager:save_lottery_data_to_collection:264 - 数据保存到集合 lottery_data_20250825_01 完成: {'saved': 0, 'duplicates': 0, 'errors': 1}
+2025-08-25 22:19:30.668 | INFO     | database_manager:_create_indexes:108 - 数据库索引创建完成
+2025-08-25 22:19:30.669 | INFO     | database_manager:connect:83 - 成功连接到MongoDB数据库: taiwanpk10
+2025-08-25 22:19:30.671 | INFO     | database_manager:get_latest_data:328 - 获取到 0 条最新数据
+2025-08-25 22:19:30.673 | INFO     | database_manager:close_connection:454 - 数据库连接已关闭

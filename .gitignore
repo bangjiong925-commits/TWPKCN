@@ -1,0 +1,11 @@
+.vercel
+
+# 本地工具和敏感文件
+../local-tools/
+key generator.html
+*.key
+*.secret
+
+# 密钥管理系统
+admin-panel.html
+backend-example.js
